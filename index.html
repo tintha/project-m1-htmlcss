@@ -8,8 +8,171 @@
     />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- write some HTML! -->
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <a href="#" class="logo"><img src="imgs/logo.svg" alt="Logo"></a>
+        <div class="dropdown">
+          <img class="menu" src="imgs/menu.svg" alt="Menu">
+          <div class="dropdown-content">
+            <ul class="nav-list">
+              <li><a class="nav-links" href="#features">Features</a></li>
+              <li><a class="nav-links" href="#advantages">Advantages</a></li>
+              <li><a class="nav-links" href="#gallery">Gallery</a></li>
+              <li><a class="nav-links" href="#products">Products</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header>
+    <div class="intro-main-container">
+      <div class="intro-middle-box">
+        <div class="intro-title">
+          <h1>Introducing Falcon 9</h1>
+        </div>
+      <div class="intro-right-text">
+        <div class="intro-sub-title">
+          <h2>We make dreams come true</h2>
+        </div>
+        <div class="intro-text">
+          <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut anim ad minim veniam.</p>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut anim ad minim veniam.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </header>
+    <!-- Features -->
+    <section>
+    <div class="feature-wrapper" id="features">
+    <div class="features-main-container">
+      <div class="feature-sub-container">
+      <div class="feature-box-text">
+        <img src="imgs/icon_check.svg" alt="Green icon check">
+        <h3>Amazing feature 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet.</p>
+      </div>
+        <div class="feature-bottom-text">
+          <p>Get it</p>
+        </div>   
+      </div>
+      <div class="feature-sub-container">
+      <div class="feature-box-text">
+        <img src="imgs/icon_reload.svg" alt="Reload icon">
+        <h3>Amazing feature 2</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla paratur.</p>
+      </div>
+        <div class="feature-bottom-text">
+          <p>Sell it</p>
+        </div>   
+      </div>
+      <div class="feature-sub-container">
+      <div class="feature-box-text">
+        <img src="imgs/icon_fingerprint.svg" alt="Fingerprint icon">
+        <h3>Amazing feature 3</h3>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+        <div class="feature-bottom-text">
+          <p>Do it</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section>
+    <!-- Some cool text -->
+    <div class="cool" id="advantages">
+      <div class="cool-sub-box">
+      <h1 class="cool-title">Some cool text</h1>
+      <p class="white-med">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut anim ad minim veniam.</p>
+    </div>
+    </div>
+    <!-- This looks cool -->
+    <div class="cool-anim-container">
+      <h4>This looks cool</h4>
+      <p>Hover me if you like random animations</p>
+    </div>
+    <!-- slick gradient --> 
+    <div class="slick-gradient" id="products">
+      <div class="slick-sub-box">
+      <h1 class="cool-title">Slick gradient</h1>
+      <p class="white-med">Lorem ipsum?</p>
+    </div>
+    </div>
+  </section>
+      <!-- Image gallery -->
+  <section>
+    <div class="image-gallery-container" id="gallery">
+    <div class="image-gallery-row">
+      <div class="image-wrapper">
+        <img src="imgs/tesla.jpg" alt="Tesla">
+        <div class="text-on-hover"><p>Tesla</p></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="imgs/procat.jpg" alt="Cat">
+        <div class="text-on-hover"><p>Cool cat</p></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="imgs/hyperloop.jpg" alt="Hyperloop">
+        <div class="text-on-hover"><p>Hyperloop</p></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="imgs/sneakycat.jpg" alt="Cat">
+        <div class="text-on-hover"><p>So sneaky/p></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="imgs/falconrocket.jpeg" alt="Rocket">
+        <div class="text-on-hover"><p>BFR - Big Falcon Rocket</p></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="imgs/funnycat.jpg" alt="Cat">
+        <div class="text-on-hover"><p>So much fun</p></div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Mailing list-->
+  <section>    
+    <div class="form-container">
+    <form>
+        <label>Register to our mailing list:</label>
+      <div class="email-input">
+        <input type="email" class="email-box" required>
+        <input type="image" id="arrow" alt="Subscribe" src="imgs/icon_send.svg">
+      </div>
+      <div class="my-checkbox">
+        <input type="checkbox" class="my-checkbox"><label>Send me daily cat images</label>
+      </div>
+    </form>
+  </div>
+  </section>
+    <footer>
+      <ul class="footer-links">
+        <div class="footer-block">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Legal notes</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Legal notes</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Legal notes</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Legal notes</a></li>
+        <li><a href="#">Copyright</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
