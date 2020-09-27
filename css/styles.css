@@ -166,7 +166,7 @@ body {
     margin: auto;
 }
 
-.cool {
+.cool { /* brown box container */
     background-color: var(--main-bg-color);
     height: 16rem;
     position: relative;
@@ -177,7 +177,7 @@ body {
     justify-content: center;
 }
 
-.cool-anim-container {
+.cool-anim-container { /* small box with orange text */
     background-color: var(--main-bg-color);
     color: white;
     border: 0.3rem white solid;
@@ -200,16 +200,16 @@ body {
 }
 
 .cool-anim-container:hover {
-    animation: colorchange 3s infinite;
+    animation: colorchange 2s ease-in-out;
 }
 
 @keyframes colorchange {
-    0% {color: black; transform: rotate(0deg);}
-    20% {color: red; }
-    30% {color: aqua;}
-    50% {color: green; transform: rotate(180deg);}
-    70% {color: yellow;}
-    100% {color: pink; transform: rotate(360deg);}
+    0% {color: black; transform: translateY(-50%);}
+    20% {color: red;   }
+    40% {color: aqua; }
+    60% {color: green; transform: translateY(50%); transform: scale(1.2); }
+    80% {color: yellow; }
+    100% {color: pink; }
 }
 
 .white-med {
@@ -416,35 +416,39 @@ input[type=email]:focus {
     .intro-main-container {
         /* fullscreen image with header */
         min-height: 100vh;
+        align-items: baseline;
+        padding-top: 40px;
     }
 
-    .intro-middle-box {
+    .intro-middle-box { /*white bordered box */
         border: 0.4rem solid white;
         display: flex;
-        width: 1350px;
         align-items: center;
-        overflow: hidden;
+        width: 80%;
+        height: 70%;
+        margin: auto;
     }
 
     .intro-title h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .intro-text {
         display: flex;
         padding-right: 2.2rem;
         margin-top: 30px;
+        flex-wrap: wrap;
     }
 
     .intro-text p {
-        font-size: 1.1rem;
-        line-height: 2rem;;
+        font-size: 1rem;
+        line-height: 1.5rem;;
         margin-right: 20px;
         margin-left: 20px;
     }
 
     .intro-sub-title h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         border-bottom: 1px dashed white;
         line-height: 100px;
         margin-left: 20px;
@@ -460,16 +464,23 @@ input[type=email]:focus {
     }
     .features-main-container {
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: 50px 50px;
     }
 
     .feature-sub-container {
-        width: 20rem;
+        /* width: 20rem; */
+        flex-wrap: wrap;
+        flex-basis: 40%;
+    }
+
+    .feature-box-text {
+        height: 16rem;
+        box-sizing: border-box;
     }
 
     .cool-sub-box, .slick-sub-box {
-        width: 1350px;
+        width: 94%;
         margin: auto;
     }
 
@@ -487,9 +498,10 @@ input[type=email]:focus {
 
     .image-gallery-row {
         justify-content: center;
-        max-width: 1500px;
+        /*max-width: 1500px;*/
         margin: auto;
     }
+
     .image-gallery-row > div > img {
         max-height: 250px;
         width: 450px;
@@ -516,5 +528,34 @@ input[type=email]:focus {
     /* fixed navbar for desktop (above 900px wide) */
     .navbar {
         position: fixed;
+    }
+}
+
+@media (min-width: 1024px) {
+/* widescreen */
+    .intro-text {
+        flex-wrap: nowrap;
+    }
+
+    .features-main-container {
+        flex-wrap: nowrap;
+        width: 80%;
+        margin: auto;
+    }
+
+    .feature-sub-container {
+        flex-wrap: nowrap;
+        flex-basis: 33%;
+    }
+
+    .cool-sub-box, .slick-sub-box {
+        width: 80%;
+        margin: auto;
+    }
+
+    .image-gallery-row {
+        justify-content: center;
+        max-width: 1500px;
+        margin: auto;
     }
 }
